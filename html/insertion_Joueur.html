@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'insertion</title>
+</head>
+<body>
+<a href="affichage.php?table=g20_joueur">Retour à la liste des joueurs</a>
+<h1>Insertion d'un joueur</h1>
+
+<form action="inserer_Joueur.php" method="POST">
+    <label for="nom_joueur">Nom du joueur:</label>
+    <input type="text" name="nom_joueur" id="nom_joueur" required><br>
+
+    <label for="jou_nationalite">Nationalité:</label>
+    <input type="text" name="jou_nationalite" id="jou_nationalite" required><br>
+
+    <label for="jou_taille">Taille (en cm):</label>
+    <input type="number" name="jou_taille" id="jou_taille" required min="1"><br> <!-- required min =1 pour renter seulement des valeurs positifs  -->
+
+    <label for="jou_poids">Poids (en kg):</label>
+    <input type="number" name="jou_poids" id="jou_poids" required min="1"><br>
+
+    <label for="jou_poste">Poste:</label>
+    <select name="jou_poste" id="jou_poste" required>
+        <option value="Pilier">Pilier</option>
+        <option value="Talonneur">Talonneur</option>
+        <option value="2ème ligne">2ème ligne</option>
+        <option value="3ème ligne">3ème ligne</option>
+        <option value="Mêlée">Mêlée</option>
+        <option value="Ouverture">Ouverture</option>
+        <option value="Centre">Centre</option>
+        <option value="Ailier">Ailier</option>
+        <option value="Arrière">Arrière</option>
+    </select><br>
+
+    <label for="id_equipe">id de l'équipe:</label>
+    <input type="number" name="id_equipe" id="id_equipe" required min="1"><br>
+
+    <input type="submit" value="Insérer">
+
+
+</form>
+
+</body>
+</html>

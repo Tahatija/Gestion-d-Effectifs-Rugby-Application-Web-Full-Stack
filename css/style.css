@@ -1,0 +1,114 @@
+/* Police élégante sans importation externe */
+body {
+    font-family: 'Arial', sans-serif; /* Utilisation d'une police standard */
+    background-color: #f4f4f4;  /* Fond clair pour donner un look épuré */
+    color: #333333;  /* Texte sombre pour une bonne lisibilité */
+    margin: 10;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #1a1a2e; /* Un bleu très sombre pour l'élégance */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;  /* Texte bien visible avec une police plus épaisse */
+}
+
+a {
+    color: #d4af37;  /* Or classique */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: 500;
+}
+
+table th {
+    background-color: #1a1a2e;  /* Un bleu marine sophistiqué */
+    color: white;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Alternance légère des lignes */
+}
+
+table tr:hover {
+    background-color: #ddd; /* Légère mise en surbrillance au survol */
+}
+
+button, input[type="submit"] {
+    background-color: #d4af37;  /* Or luxe */
+    color: #1a1a2e;  /* Texte sombre */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #c59e2c;  /* Or légèrement plus foncé au survol */
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;  /* Assure que le padding ne dépasse pas la largeur */
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #d4af37;  /* Mise en évidence de la bordure quand actif */
+}
+
+input[type="submit"]:active, button:active {
+    background-color: #b8942f;  /* Petit effet lors du clic */
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form input[type="text"], form input[type="number"], form select {
+    margin-bottom: 12px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}

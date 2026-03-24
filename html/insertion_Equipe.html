@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'insertion d'équipe</title>
+</head>
+<body>
+
+<a href="affichage.php?table=g20_equipe">Retour à la liste des équipes</a>
+<h1>Insertion d'une équipe</h1>
+
+<form action="inserer_Equipe.php" method="POST">
+    <label for="nom_equipe">Nom de l'équipe:</label>
+    <input type="text" name="nom_equipe" id="nom_equipe" required><br>
+
+    <label for="ville">Ville:</label>
+    <input type="text" name="ville" id="ville" required><br>
+
+    <input type="submit" value="Insérer">
+</form>
+</body>
+</html>
